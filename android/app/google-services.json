@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029881561828",
+    "project_id": "tos-merl-app",
+    "storage_bucket": "tos-merl-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029881561828:android:6153f44bdc1b66cf06e2f1",
+        "android_client_info": {
+          "package_name": "com.example.tos_merl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWa2XhyD3aOAmwr_sn1tjgJwc4WlzeGSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

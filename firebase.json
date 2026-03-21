@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "tos-merl-app",
+          "appId": "1:1029881561828:android:6153f44bdc1b66cf06e2f1",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "tos-merl-app",
+          "configurations": {
+            "android": "1:1029881561828:android:6153f44bdc1b66cf06e2f1",
+            "ios": "1:1029881561828:ios:86249fd463f597eb06e2f1",
+            "macos": "1:1029881561828:ios:86249fd463f597eb06e2f1",
+            "web": "1:1029881561828:web:5beadde81d4c03e606e2f1",
+            "windows": "1:1029881561828:web:31c8dd417997775806e2f1"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
