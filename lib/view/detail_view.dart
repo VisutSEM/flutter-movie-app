@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
@@ -29,7 +30,13 @@ class DetailView extends StatelessWidget {
           slivers: [
             // 🔥 AppBar that hides on scroll
             SliverAppBar(
-              leading: BackButton(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.red)),),
+              actions: [
+                IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
+              ],
+              leading: IconButton(onPressed: (){
+                Get.back();
+              }, icon: Icon(Icons.arrow_back_ios)),
               expandedHeight: 600,
               floating: false,
               pinned: false,
@@ -56,9 +63,6 @@ class DetailView extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Image.network(
-                      //   "https://image.tmdb.org/t/p/w500/${movie.posterPath}",
-                      // ),
                       SizedBox(height: 10),
                       Padding(
                         padding: const EdgeInsets.all(8.0),

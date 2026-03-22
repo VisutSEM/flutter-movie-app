@@ -17,9 +17,9 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: Text("Flex App",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red),),centerTitle: true,
         actions: [IconButton(onPressed: (){
-          if(Get.isDarkMode)
+          if(Get.isDarkMode) {
             Get.changeTheme(ThemeData.light());
-          else{
+          }else{
             Get.changeTheme(ThemeData.dark());
           }
         }, icon: Icon(Icons.light_mode))],
